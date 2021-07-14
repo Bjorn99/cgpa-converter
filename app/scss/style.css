@@ -193,6 +193,8 @@ main {
 .container nav .title h3 {
   margin-bottom: 0;
   color: var(--clr-primary-5);
+  padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 .container nav .title h3 a {
   text-decoration: none;
