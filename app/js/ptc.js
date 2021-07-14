@@ -1,23 +1,23 @@
-'use strict';
+"use strict";
 
 const convert = document.getElementById("convert");
-const submit = document.getElementById("percent");
+const submit = document.getElementById("cgpa");
 const dispElm1 = document.getElementById("display-result-1");
 
 /***** CGPA To Percentage *****/
-function convertToP(CGPA) {
-  let percentage = CGPA * 9.5;
+function convertToC(percentage) {
+  let CGPA = percentage / 9.5;
 
-  return percentage;
+  return CGPA;
 }
 
 convert.addEventListener("click", function () {
   console.log("click++");
   this.style.background = "#490055";
   let number = submit.value;
-  dispElm1.textContent = `${convertToP(number)}%`;
+  dispElm1.textContent = `${convertToC(number)}`;
 
-  convertToP(number);
+  convertToC(number);
 });
 
 /* Button disabled if input field empty */
